@@ -8,6 +8,7 @@ namespace CSharpJourney{
         static void Main(string[] args){
             Console.WriteLine("Hello World!");
             Program2.Hello();
+            Program2.PrintArray();
         }
     }
 }
