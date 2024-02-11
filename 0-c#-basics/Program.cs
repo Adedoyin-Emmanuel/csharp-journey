@@ -16,5 +16,11 @@ namespace CSharpJourney{
                 Console.WriteLine(numbers[i]);
             }
         }
+
+        public static void PrintString(){
+            string fullName = "Adedoyin Emmanuel";
+
+            Console.WriteLine(fullName);
+        }
     }
 }

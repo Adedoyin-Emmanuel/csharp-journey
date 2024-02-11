@@ -9,6 +9,9 @@ namespace CSharpJourney{
             Console.WriteLine("Hello World!");
             Program2.Hello();
             Program2.PrintArray();
+            Program2.PrintString();
+
+            
         }
     }
 }
