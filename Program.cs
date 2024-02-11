@@ -11,7 +11,7 @@ namespace CSharpJourney{
             Program2.PrintArray();
             Program2.PrintString();
 
-            
+           // Program2.WorkingWithArray();
         }
     }
 }
