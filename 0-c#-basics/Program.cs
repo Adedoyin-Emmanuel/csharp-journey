@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 
 namespace CSharpJourney{
@@ -36,8 +37,12 @@ namespace CSharpJourney{
 
         }
 
-        public static void workingWithList(){
-            
+        public static void WorkingWithList(){
+            var cars = new List<string>() { "Buggati", "Camary", "Henenssey Venom", "Volvo"};
+
+            foreach (string car in cars){
+                Console.WriteLine(car);
+            }
         }
     }
 }
