@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-
 namespace CSharpJourney{
     class Program2 {
         
@@ -25,6 +24,9 @@ namespace CSharpJourney{
 
             Console.WriteLine(surName);
             Console.WriteLine(fullName);
+
+
+            
         }
 
 
