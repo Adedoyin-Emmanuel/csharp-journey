@@ -25,8 +25,6 @@ namespace CSharpJourney{
             Console.WriteLine(surName);
             Console.WriteLine(fullName);
 
-
-            
         }
 
 
@@ -45,6 +43,11 @@ namespace CSharpJourney{
             foreach (string car in cars){
                 Console.WriteLine(car);
             }
+        }
+
+
+        public static void workingWithNumber(){
+            Console.WriteLine("Number Max Length is {0} {1}", long.MaxValue, long.MinValue);
         }
     }
 }
