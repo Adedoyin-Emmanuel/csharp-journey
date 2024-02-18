@@ -15,6 +15,8 @@ namespace CSharpJourney{
             for(int i = 0; i < numbers.Length; i++){
                 Console.WriteLine(numbers[i]);
             }
+
+            
         }
 
         public static void PrintString(){
@@ -35,14 +37,29 @@ namespace CSharpJourney{
                 Console.WriteLine(numbers[i]);
             }
 
+
+
+
         }
 
         public static void WorkingWithList(){
             var cars = new List<string>() { "Buggati", "Camary", "Henenssey Venom", "Volvo"};
 
-            foreach (string car in cars){
+          
+
+
+
+
+            cars.Add("Korope");
+
+
+
+
+
+              foreach (string car in cars){
                 Console.WriteLine(car);
             }
+
         }
 
 
