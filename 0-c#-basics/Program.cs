@@ -64,10 +64,19 @@ namespace CSharpJourney{
             Console.WriteLine(now);
 
             Console.WriteLine(now.ToLongDateString());
+
+            Console.WriteLine("Today is {0}", now.ToLongDateString());
             Console.WriteLine(now.ToShortDateString());
 
             Console.WriteLine(now.ToLongTimeString());
             Console.WriteLine(now.ToShortTimeString());
+
+
+
+            Console.WriteLine(now.ToString("dd-MM-yyyy"));
+            Console.WriteLine(now.ToString("hh:mm:ss"));
+
+            
 
             
 
@@ -75,7 +84,7 @@ namespace CSharpJourney{
 
             /*
              Is it me or the C# dev kit extension doesn't work until I connect my
-             PC to internet. If that be the case, that's not good enough. I'm literally
+             PC to internet? If that be the case, that's not good enough. I'm literally
              writing raw C# at the moment, no support 😂. It is well and NEPA welldone oo,
              no power-supply since morning. I mean if not for my love for C#, why will I using
              my PC at 26%  and I know they aren't giving us power supply anytime soon. 😮‍💨 
