@@ -44,27 +44,44 @@ namespace CSharpJourney{
 
         public static void WorkingWithList(){
             var cars = new List<string>() { "Buggati", "Camary", "Henenssey Venom", "Volvo"};
-
-          
-
-
-
-
             cars.Add("Korope");
 
-
-
-
-
-              foreach (string car in cars){
+            foreach (string car in cars){
                 Console.WriteLine(car);
             }
-
         }
 
 
-        public static void workingWithNumber(){
+        public static void WorkingWithNumber(){
             Console.WriteLine("Number Max Length is {0} {1}", long.MaxValue, long.MinValue);
+        }
+
+
+        public static void WorkingWithDate(){
+            var date = new DateTime();
+            var now = DateTime.Now;
+
+            Console.WriteLine(now);
+
+            Console.WriteLine(now.ToLongDateString());
+            Console.WriteLine(now.ToShortDateString());
+
+            Console.WriteLine(now.ToLongTimeString());
+            Console.WriteLine(now.ToShortTimeString());
+
+            
+
+            // It is soo painful VsCode isn't giving auto complete 
+
+            /*
+             Is it me or the C# dev kit extension doesn't work until I connect my
+             PC to internet. If that be the case, that's not good enough. I'm literally
+             writing raw C# at the moment, no support 😂. It is well and NEPA welldone oo,
+             no power-supply since morning. I mean if not for my love for C#, why will I using
+             my PC at 26%  and I know they aren't giving us power supply anytime soon. 😮‍💨 
+
+            */
+
         }
     }
 }

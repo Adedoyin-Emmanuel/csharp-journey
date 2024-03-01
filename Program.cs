@@ -13,11 +13,12 @@ namespace CSharpJourney{
 
             //Program2.WorkingWithArray();
 
-            Program2.WorkingWithList();
+            //Program2.WorkingWithList();
 
             //Program2.workingWithNumber();
 
 
+            Program2.WorkingWithDate();
 
         }
     }
