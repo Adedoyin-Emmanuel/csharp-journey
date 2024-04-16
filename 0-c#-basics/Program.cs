@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
+
 
 namespace CSharpJourney{
     class Program2 {
@@ -37,15 +39,20 @@ namespace CSharpJourney{
                 Console.WriteLine(numbers[i]);
             }
 
-
-
-
         }
 
         public static void WorkingWithList(){
-            var cars = new List<string>() { "Buggati", "Camary", "Henenssey Venom", "Volvo"};
-            cars.Add("Korope");
+            var cars = new List<string>
+            {
+                "Buggati",
+                "Camary",
+                "Henenssey Venom",
+                "Volvo",
+                "Korope"
+            };
 
+
+            
             foreach (string car in cars){
                 Console.WriteLine(car);
             }
@@ -60,6 +67,8 @@ namespace CSharpJourney{
         public static void WorkingWithDate(){
             var date = new DateTime();
             var now = DateTime.Now;
+
+            
 
             Console.WriteLine(now);
 
@@ -92,5 +101,14 @@ namespace CSharpJourney{
             */
 
         }
+
+         public static void WorkingWithFiles() {
+             var content = File.ReadAllText("./Program.cs");
+
+            Console.WriteLine(content);
+
+         }
     }
+
+   
 }
