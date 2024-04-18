@@ -102,17 +102,17 @@ namespace CSharpJourney{
 
         }
 
-        // public static void WorkingWithFiles() {
-        //     var content = File.ReadAllText("./Program.cs");
-        //     var file = new FileInfo("README.md");
+        public static void WorkingWithFiles() {
+            var content = File.ReadAllText("./Program.cs");
+            var file = new FileInfo("README.md");
 
-        //     Console.WriteLine(file.Extension);
-        //     Console.WriteLine(file.CreationTime);
+            Console.WriteLine(file.Extension);
+            Console.WriteLine(file.CreationTime);
 
 
-        //    // Console.WriteLine(content);
+           // Console.WriteLine(content);
 
-        //  }
+         }
 
          public  static void WorkingWithFilesUsingFileInfo(){
             var file = new FileInfo("README.md");
