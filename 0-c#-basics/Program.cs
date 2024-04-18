@@ -136,6 +136,26 @@ namespace CSharpJourney{
             */
 
          }
+
+
+
+         /*
+         I will try to create a directory and then create a file in it with C#
+         */
+
+
+         public static void CreateCSharpIntermediateDirectory(){
+            var dir = new DirectoryInfo("0-c#-intermediate");
+
+            dir.Create();
+
+            var file = new FileInfo(@"./0-c#-intermediate/Program.cs");
+
+            file.Create();
+
+
+            Console.WriteLine("File and directory created successfully");
+         }
     }
 
    

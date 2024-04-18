@@ -20,7 +20,16 @@ namespace CSharpJourney{
 
             // Program2.WorkingWithDate();
 
-            Program2.WorkingWithFilesUsingFileInfo();
+            //Program2.CreateCSharpIntermediateDirectory();
+
+
+            var person = new CSharpClasses("Adedoyin Emmanuel", 18, "coding, drumming, travelling");
+
+            person.Introduce();
+
+
+
+
 
         }
     }
