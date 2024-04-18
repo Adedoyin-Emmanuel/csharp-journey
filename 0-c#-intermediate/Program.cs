@@ -7,7 +7,7 @@ namespace CSharpJourney{
 
 
 
-         string name;
+        string name;
         long age;
         string hobbies;
         
