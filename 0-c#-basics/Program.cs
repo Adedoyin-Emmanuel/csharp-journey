@@ -114,13 +114,26 @@ namespace CSharpJourney{
 
         //  }
 
-         public static void WorkingWithFilesUsingFileInfo(){
+         public  static void WorkingWithFilesUsingFileInfo(){
             var file = new FileInfo("README.md");
 
             Console.WriteLine("This file was last accessed on, {0}", file.LastAccessTime);
             Console.WriteLine("This file was last modified on {0}", file.LastWriteTime);
             Console.WriteLine("This file was created on {0}", file.CreationTime);
             Console.WriteLine("This file extension is {0}", file.Extension);
+
+            if(file.Exists){
+                Console.WriteLine("This file exists");
+            }else{
+                Console.WriteLine("This file does not exist");
+            }
+
+
+
+            /**
+                I'm finding it difficult to write to a file in C#, humm, I've to make more research
+
+            */
 
          }
     }
