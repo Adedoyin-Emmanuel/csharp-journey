@@ -20,7 +20,7 @@ namespace CSharpJourney{
 
             // Program2.WorkingWithDate();
 
-            Program2.WorkingWithFiles();
+            Program2.WorkingWithFilesUsingFileInfo();
 
         }
     }
