@@ -23,18 +23,14 @@ namespace CSharpJourney{
             //Program2.CreateCSharpIntermediateDirectory();
 
 
-            var person = new CSharpClasses("Adedoyin Emmanuel", 18, "coding, drumming, travelling");
+            var person = new CSharpClasses("Adedoyin Emmanuel", "coding, drumming, travelling") 
+            { BirthDate = new DateTime(2005, 9, 14) };
 
             person.Introduce();
 
             person.setGirlfriend(true);
 
-            
-
-            Console.WriteLine(person.getGirlfriend());
-
-
-
+            person.Introduce();
 
 
         }

@@ -7,16 +7,32 @@ namespace CSharpJourney{
 
 
 
-        string name;
-        long age;
-        string hobbies;
+        readonly string name;
+        readonly string hobbies;
 
 
 
         // let's work with access modifiers
 
-        private bool hasGirlfriend; 
+        private bool _hasGirlfriend;
+
+
+        // let's work with setters and getters
+
+        public  DateTime BirthDate { set; get; }
+
+        public double  Age {
+            get{
+                var timestamp = DateTime.Now - BirthDate;
+                var years = timestamp.Days / 365;
+
+                return years;
+            }
+          
+        }
+
         
+
 
 
         /*
@@ -32,47 +48,42 @@ namespace CSharpJourney{
             will complain.  Oh yeah, it is complaining 🤣
 
         */
-        // public CSharpClasses(){
-        //     Console.WriteLine("Hello from the constructor");
-        // }
-
-        // public CSharpClasses(string name){
-        //     Console.WriteLine("Hello from the constructor, my name is {0}", name);
-        // }
 
 
-        // // Yet another constructor but with a different signature this case a datatypee
-        // public CSharpClasses(int age){
-        //     Console.WriteLine("Hello from the constructor, my age is {0}", age);
-        // }
-
-
-
-        public CSharpClasses(string name, long age, string hobbies){
+        public CSharpClasses(string name, string hobbies){
 
             this.name = name;
-            this.age = age;
-
             this.hobbies = hobbies;
-            this.hasGirlfriend = false;
+            this._hasGirlfriend = false;
+
+        
 
         }
 
 
 
         public void Introduce (){
-            Console.WriteLine("Hi, my name is {0}. I'm {1} years old. I love {2}", name, age, hobbies);
+            var hasGirlfriendString = "";
+
+           if(_hasGirlfriend){
+                hasGirlfriendString = "I've a girlfriend";
+           }else{
+                hasGirlfriendString = "I don't have a girlfriend";
+           }
+
+            Console.WriteLine("Hi, my name is {0}. I'm {1} years old. {2}  I love {3}", name, Age, hasGirlfriendString, hobbies);
         }
 
 
         public void setGirlfriend(bool value){
-            this.hasGirlfriend = value;
+            _hasGirlfriend = value;
         
         }
 
 
         public bool getGirlfriend(){
-            return this.hasGirlfriend;
+            return _hasGirlfriend;
+
         }
 
 
