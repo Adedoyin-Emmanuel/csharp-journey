@@ -19,7 +19,7 @@ namespace CSharpJourney{
         public string hobbies;
 
 
-
+        
         public Person(string name, int age, string gender, string hobbies){
             this.name = name;
             this.age = age;
@@ -30,8 +30,9 @@ namespace CSharpJourney{
         }
 
 
-        public void Introduce(){
+        public virtual void Introduce(){
             Console.WriteLine("Hello, My name is {0}, I'm a {1}, I'm {2} years old. I love {3}.", name, gender, age, hobbies);
         }
+
     }
 }

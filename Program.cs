@@ -47,6 +47,13 @@ namespace CSharpJourney{
             person2.Introduce();
 
 
+
+            var employee = new Employee("Adedoyin Emmanuel Adeniyi", 18, "male", "coding, cooking, cycling, gaming");
+
+
+            employee.Introduce();
+
+
         }
     }
 }
