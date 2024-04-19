@@ -10,6 +10,12 @@ namespace CSharpJourney{
         string name;
         long age;
         string hobbies;
+
+
+
+        // let's work with access modifiers
+
+        private bool hasGirlfriend; 
         
 
 
@@ -48,6 +54,7 @@ namespace CSharpJourney{
             this.age = age;
 
             this.hobbies = hobbies;
+            this.hasGirlfriend = false;
 
         }
 
@@ -56,6 +63,20 @@ namespace CSharpJourney{
         public void Introduce (){
             Console.WriteLine("Hi, my name is {0}. I'm {1} years old. I love {2}", name, age, hobbies);
         }
+
+
+        public void setGirlfriend(bool value){
+            this.hasGirlfriend = value;
+        
+        }
+
+
+        public bool getGirlfriend(){
+            return this.hasGirlfriend;
+        }
+
+
+        
 
 
     }

@@ -27,6 +27,12 @@ namespace CSharpJourney{
 
             person.Introduce();
 
+            person.setGirlfriend(true);
+
+            
+
+            Console.WriteLine(person.getGirlfriend());
+
 
 
 
