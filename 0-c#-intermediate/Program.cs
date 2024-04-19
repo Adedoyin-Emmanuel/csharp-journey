@@ -11,6 +11,11 @@ namespace CSharpJourney{
         readonly string hobbies;
 
 
+        class TestClass{
+            
+        }
+
+
 
         // let's work with access modifiers
 

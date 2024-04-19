@@ -28,7 +28,7 @@ namespace CSharpJourney{
 
             person.setGirlfriend(true);
 
-            person.Introduce();
+            //person.Introduce();
 
 
 
@@ -37,8 +37,14 @@ namespace CSharpJourney{
             int calculatorResult2 = Calculator.Add([1, 2, 3]);
 
 
-            Console.WriteLine(calculatorResult);
-            Console.WriteLine(calculatorResult2);
+            //Console.WriteLine(calculatorResult);
+            //Console.WriteLine(calculatorResult2);
+
+
+            var person2 = new Person("Adedoyin Emmanuel", 18, "male", "coding, cooking, cycling, gaming");
+
+
+            person2.Introduce();
 
 
         }
