@@ -32,7 +32,6 @@ namespace CSharpJourney{
 
 
 
-
             int calculatorResult = Calculator.Add(1, 2, 3, 4, 5);
 
             int calculatorResult2 = Calculator.Add([1, 2, 3]);
@@ -40,8 +39,6 @@ namespace CSharpJourney{
 
             Console.WriteLine(calculatorResult);
             Console.WriteLine(calculatorResult2);
-
-
 
 
         }
