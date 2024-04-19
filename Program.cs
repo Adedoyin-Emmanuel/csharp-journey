@@ -127,7 +127,22 @@ namespace CSharpJourney{
             var circle = new Circle("circle", 20, 20);
 
 
-            circle.Draw();
+            //circle.Draw();
+
+
+            var logger = new Logger();
+
+
+            var dbMigrator = new Dbmigrator(logger);
+
+            var installer = new Installer(logger);
+
+
+            dbMigrator.MigrateDatabase();
+
+
+            installer.Install();
+
 
 
             
