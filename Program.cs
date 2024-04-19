@@ -26,11 +26,22 @@ namespace CSharpJourney{
             var person = new CSharpClasses("Adedoyin Emmanuel", "coding, drumming, travelling") 
             { BirthDate = new DateTime(2005, 9, 14) };
 
-            person.Introduce();
-
             person.setGirlfriend(true);
 
             person.Introduce();
+
+
+
+
+            int calculatorResult = Calculator.Add(1, 2, 3, 4, 5);
+
+            int calculatorResult2 = Calculator.Add([1, 2, 3]);
+
+
+            Console.WriteLine(calculatorResult);
+            Console.WriteLine(calculatorResult2);
+
+
 
 
         }
