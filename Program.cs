@@ -44,9 +44,9 @@ namespace CSharpJourney{
             var person2 = new Person("Adedoyin Emmanuel", 18, "male", "coding, cooking, cycling, gaming");
 
 
-            person2.Introduce();
+            // person2.Introduce();
 
-            person2.Walk();
+            // person2.Walk();
 
 
 
@@ -54,12 +54,12 @@ namespace CSharpJourney{
             var employee = new Employee("Adedoyin Emmanuel Adeniyi", 18, "male", "coding, cooking, cycling, drumming, gaming, travelling");
 
 
-            employee.Introduce();
+            // employee.Introduce();
 
-            employee.Walk();
+            // employee.Walk();
 
 
-            employee.Work("SquadCo"); // John CTO at SquadCo the C# guy. I love that guy ngl.
+            // employee.Work("SquadCo"); // John CTO at SquadCo the C# guy. I love that guy ngl.
 
 
 
@@ -69,21 +69,21 @@ namespace CSharpJourney{
             Employee henqsoft = new Employee("Fasakin Henry", 17, "male", "coding, designing, cooking, cycling, listening to music, drumming");
 
 
-            henqsoft.Introduce();
+            // henqsoft.Introduce();
 
 
-            henqsoft.Work("Facebook");
+            // henqsoft.Work("Facebook");
 
-            henqsoft.InRelationship = false;
-
-
-            henqsoft.Work("Twitter");
+            // henqsoft.InRelationship = false;
 
 
-            henqsoft.InRelationship = true;
+            // henqsoft.Work("Twitter");
 
 
-            henqsoft.GetRelationshipStatus(); 
+            // henqsoft.InRelationship = true;
+
+
+            // henqsoft.GetRelationshipStatus(); 
 
 
 
@@ -96,34 +96,38 @@ namespace CSharpJourney{
             Employee emmysoft = new Employee("Adedoyin Emmanuel", 18, "male", "coding, cooking, cycling, listening to music, drumming, gaming, travelling");
 
 
-            emmysoft.Introduce();
+            // emmysoft.Introduce();
 
 
 
-            emmysoft.Work("Google");
+            // emmysoft.Work("Google");
 
-            emmysoft.Work("Clipsave"); 
-
-            
-
-            emmysoft.Work("Apple");
-
-            emmysoft.Work("Amazon");
-
-            emmysoft.InRelationship = false;
-
-            emmysoft.GetRelationshipStatus();
-
-
-            emmysoft.Work("Microsoft");
-
-            emmysoft.InRelationship = true;
-
-            emmysoft.GetRelationshipStatus();
+            // emmysoft.Work("Clipsave"); 
 
 
 
-            
+            // emmysoft.Work("Apple");
+
+            // emmysoft.Work("Amazon");
+
+            // emmysoft.InRelationship = false;
+
+            // emmysoft.GetRelationshipStatus();
+
+
+            // emmysoft.Work("Microsoft");
+
+            // emmysoft.InRelationship = true;
+
+            // emmysoft.GetRelationshipStatus();
+
+
+
+
+            var circle = new Circle("circle", 20, 20);
+
+
+            circle.Draw();
 
 
             
