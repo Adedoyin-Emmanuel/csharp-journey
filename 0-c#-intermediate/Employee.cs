@@ -22,6 +22,11 @@ namespace CSharpJourney{
         }
 
 
+        public void Work(string placeOfWork){
+            Console.WriteLine("{0} is working at {1}", this.name, placeOfWork);
+        }
+
+
         
     }
 }

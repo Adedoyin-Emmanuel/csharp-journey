@@ -46,12 +46,96 @@ namespace CSharpJourney{
 
             person2.Introduce();
 
+            person2.Walk();
 
 
-            var employee = new Employee("Adedoyin Emmanuel Adeniyi", 18, "male", "coding, cooking, cycling, gaming");
+
+
+            var employee = new Employee("Adedoyin Emmanuel Adeniyi", 18, "male", "coding, cooking, cycling, drumming, gaming, travelling");
 
 
             employee.Introduce();
+
+            employee.Walk();
+
+
+            employee.Work("SquadCo"); // John CTO at SquadCo the C# guy. I love that guy ngl.
+
+
+
+
+            // Let me flex my C# skills right now, time to be a hero.
+
+            Employee henqsoft = new Employee("Fasakin Henry", 17, "male", "coding, designing, cooking, cycling, listening to music, drumming");
+
+
+            henqsoft.Introduce();
+
+
+            henqsoft.Work("Facebook");
+
+            henqsoft.InRelationship = false;
+
+
+            henqsoft.Work("Twitter");
+
+
+            henqsoft.InRelationship = true;
+
+
+            henqsoft.GetRelationshipStatus(); 
+
+
+
+
+
+
+
+            // It is time to flex it again
+
+            Employee emmysoft = new Employee("Adedoyin Emmanuel", 18, "male", "coding, cooking, cycling, listening to music, drumming, gaming, travelling");
+
+
+            emmysoft.Introduce();
+
+
+
+            emmysoft.Work("Google");
+
+            emmysoft.Work("Clipsave"); 
+
+            
+
+            emmysoft.Work("Apple");
+
+            emmysoft.Work("Amazon");
+
+            emmysoft.InRelationship = false;
+
+            emmysoft.GetRelationshipStatus();
+
+
+            emmysoft.Work("Microsoft");
+
+            emmysoft.InRelationship = true;
+
+            emmysoft.GetRelationshipStatus();
+
+
+
+            
+
+
+            
+
+
+            
+
+
+
+
+
+
 
 
         }

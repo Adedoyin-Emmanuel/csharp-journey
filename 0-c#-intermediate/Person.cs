@@ -18,8 +18,11 @@ namespace CSharpJourney{
         public int age;
         public string hobbies;
 
+        public bool InRelationship{ get; set; }
+
 
         
+
         public Person(string name, int age, string gender, string hobbies){
             this.name = name;
             this.age = age;
@@ -33,6 +36,24 @@ namespace CSharpJourney{
         public virtual void Introduce(){
             Console.WriteLine("Hello, My name is {0}, I'm a {1}, I'm {2} years old. I love {3}.", name, gender, age, hobbies);
         }
+
+
+        public void Walk(){
+            Console.WriteLine("{0} is walking", name);
+        }
+
+
+        public void GetRelationshipStatus(){
+            string message = name + " is not in a relationship";
+
+            if (InRelationship)
+                message = name + " is in a relationship";
+
+            Console.WriteLine(message);
+        }
+
+
+        
 
     }
 }
