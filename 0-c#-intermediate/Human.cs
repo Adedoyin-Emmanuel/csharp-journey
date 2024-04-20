@@ -12,15 +12,12 @@ namespace CSharpJourney{
         class. 
     */
 
-    class Human{
+    class Human(Animal animal, Walkable walkable){
 
-        private readonly Animal _animal;
+        private readonly Animal _animal = animal;
+        private readonly Walkable _walkable = walkable;
         
-         public Human(Animal animal)
-        {
-            this._animal = animal;
-            
-        }
+       
 
 
     }
