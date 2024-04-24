@@ -180,9 +180,17 @@ namespace CSharpJourney{
 
 
 
-            for(int i = 0; i < list.Count; i ++){
-                Console.WriteLine(list[i]);
-            }
+            // for(int i = 0; i < list.Count; i ++){
+            //     Console.WriteLine(list[i]);
+            // }
+
+
+            var photoProcessor = new PhotoProcessor();
+            var filters = new PhotoFilters();
+
+            PhotoProcessor.PhotoFilterHandler filterHandler = filters.ApplyBrightness;
+
+            photoProcessor.Process("photo.jpg", filterHandler);
 
 
 
