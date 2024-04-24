@@ -1,6 +1,7 @@
 using System;
 
-namespace CSharpJourney{
+namespace CSharpJourney
+{
 
     /*
     
@@ -12,21 +13,10 @@ namespace CSharpJourney{
         Interfaces can be used to achieve polymorphism
 
     */
-    class Interfaces{
 
         public interface IPerson{
-            public void Walk(string name);
+            public void Walk();
             string FullName { set; get; }
-
+            
         }
-
-        class Person(string fullName) : IPerson{
-
-            public string FullName { get; set; } = fullName;
-
-            public void Walk(string name){
-                Console.WriteLine(name);
-            }
-        }
-    }
 }

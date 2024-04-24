@@ -160,10 +160,29 @@ namespace CSharpJourney{
 
             var fileManager = new FileManager();
 
-            fileManager.CreateCsharpAdvancedDirectory("0-c#-advanced");
-            fileManager.CreateCsharpAdvancedFile("Program.cs");
+            //fileManager.CreateCsharpAdvancedDirectory("0-c#-advanced");
+            //fileManager.CreateCsharpAdvancedFile("Program.cs");
 
 
+
+            var emmy = new Person2("Emmanuel");
+
+            // Console.WriteLine(emmy.FullName);
+
+            // emmy.Walk();
+
+
+            var list = new CustomList<int>();
+
+            list.Add(5);
+            list.Add(10);
+            list.Add(20);
+
+
+
+            for(int i = 0; i < list.Count; i ++){
+                Console.WriteLine(list[i]);
+            }
 
 
 
