@@ -27,7 +27,7 @@ namespace CSharpJourney
         public void CreateCsharpAdvancedFile(string filename){
             try
             {
-                var file = new FileInfo("0-c#-advanced" + filename);
+                var file = new FileInfo("0-c#-advanced/" + filename);
 
                 file.Create();
             }
@@ -36,7 +36,7 @@ namespace CSharpJourney
             }
             finally
             {
-                Console.WriteLine("{0} created successfully 🚀");
+                Console.WriteLine("{0} created successfully 🚀", filename);
             }
         }
     }
