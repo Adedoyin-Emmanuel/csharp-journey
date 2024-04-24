@@ -8,19 +8,36 @@ namespace CSharpJourney
     {
 
 
-
         public void CreateCsharpAdvancedDirectory(string filename)
         {
+           try
+           {
             var directory = new DirectoryInfo(filename);
             directory.Create();
+           }catch(Exception e)
+           {
+            Console.WriteLine(e);
+           }finally{
+            Console.WriteLine("{0} created successfully 🚀", filename);
+           }
         }
 
 
 
         public void CreateCsharpAdvancedFile(string filename){
-            var file = new FileInfo("0-c#-advanced" + filename);
+            try
+            {
+                var file = new FileInfo("0-c#-advanced" + filename);
 
-            file.Create();
+                file.Create();
+            }
+            catch(Exception e){
+                Console.WriteLine(e);
+            }
+            finally
+            {
+                Console.WriteLine("{0} created successfully 🚀");
+            }
         }
     }
 }

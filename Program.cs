@@ -138,10 +138,35 @@ namespace CSharpJourney{
             var installer = new Installer(logger);
 
 
-            dbMigrator.MigrateDatabase();
+            //dbMigrator.MigrateDatabase();
 
 
-            installer.Install();
+            //installer.Install();
+
+            var emmanuel = new Animal("human", 18);
+            var walkable = new Walkable();
+            var human = new Human(emmanuel, walkable);
+
+
+
+
+            var flyable = new Flyable();
+            var swimable = new Swimable();
+            var birdAnimal = new Animal("bird", 2);
+            var bird = new Bird(birdAnimal, flyable);
+            var duck = new Duck(birdAnimal, walkable, swimable);
+
+
+
+            var fileManager = new FileManager();
+
+            fileManager.CreateCsharpAdvancedDirectory("0-c#-advanced");
+            fileManager.CreateCsharpAdvancedFile("Program.cs");
+
+
+
+
+
 
 
 
