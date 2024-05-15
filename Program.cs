@@ -188,10 +188,12 @@ namespace CSharpJourney{
 
             var photoProcessor = new PhotoProcessor();
             var filters = new PhotoFilters();
+            var customFilters = new CustomPhotoFilters();
 
 
             Action<Photo> filterHandler = filters.ApplyBrightness;
             filterHandler += filters.ApplyOpacity;
+            filterHandler += customFilters.ApplyRedEye;
 
             photoProcessor.Process("photo.jpg", filterHandler);
 
