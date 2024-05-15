@@ -195,9 +195,23 @@ namespace CSharpJourney{
             filterHandler += filters.ApplyOpacity;
             filterHandler += customFilters.ApplyRedEye;
 
-            photoProcessor.Process("photo.jpg", filterHandler);
+            //photoProcessor.Process("photo.jpg", filterHandler);
 
 
+
+            var lambdaExpression = new LambdaExpression();
+
+
+            Console.WriteLine(lambdaExpression.Add(5, 5));
+            Console.WriteLine(lambdaExpression.AddWithLambda(5, 5));
+
+
+            Console.WriteLine("\n");
+
+
+
+            Console.WriteLine(lambdaExpression.Subtract(5, 5));
+            Console.WriteLine(lambdaExpression.SubtractWithLambda(5, 5));
 
 
 
