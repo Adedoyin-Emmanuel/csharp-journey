@@ -184,11 +184,14 @@ namespace CSharpJourney{
             //     Console.WriteLine(list[i]);
             // }
 
+       
 
             var photoProcessor = new PhotoProcessor();
             var filters = new PhotoFilters();
 
-            PhotoProcessor.PhotoFilterHandler filterHandler = filters.ApplyBrightness;
+
+            Action<Photo> filterHandler = filters.ApplyBrightness;
+            filterHandler += filters.ApplyOpacity;
 
             photoProcessor.Process("photo.jpg", filterHandler);
 
