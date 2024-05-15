@@ -1,6 +1,18 @@
 # Learning C# 🚀
 
-Hello there, I created this repo to document my journey on learning C# from zero to hero. Of course I learned **C#** from the best so why wouldn't I be a world class **C#** Developer.
+Hello there, I created this repo to document my journey on learning C# from zero to hero. Of course I learned **C#** from the best so why wouldn't I be a world class **C#** Developer. I started learning C# **January 2024** and my goal is to master the language and start building solid projects by **August 2024**
+
+## Resources 👜
+
+Okay, so for the resources, I'm learning from **Mosh Hamedani**, you can find the video on Youtube. But since the course is kinda old too and somethings have changed in the **C#** community, I'm also using the official **Microsoft Documentation** and their videos to learn too. I've picked somethings **Mosh** didn't mention there. I'm also using **W3Schools** to learn too, I've finished their tutorial and I also took their test and got 22/25.
+
+1. Mosh Hamedani C# For Beginners [Watch on Youtube](https://www.youtube.com/watch?v=gfkTfcpWqAY&pp=ygUQbW9zaCBoYW1lZGFuaSBDIw%3D%3D)
+2. Mosh Hamedani DotNet Tutorials [Watch on Youtube](https://www.youtube.com/watch?v=gfkTfcpWqAY&list=PLTjRvDozrdlz3_FPXwb6lX_HoGXa09Yef)
+3. Microsoft C# Step by Step Tutorials [Microsoft C# Tutorials](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/)
+4. Take W3School C# Quiz [Take The Quiz](https://www.w3schools.com/quiztest/quiztest.asp?qtest=CS)
+5. Learn C# Basics from W3schools [Learn C# Tutorials](https://www.w3schools.com/cs/index.php)
+
+I will also add any other resources here.
 
 ## What I've learned 🧠
 
