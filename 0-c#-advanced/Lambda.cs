@@ -16,7 +16,12 @@ namespace CSharpJourney{
 
         const square = x => x * x;
 
-        Just that in 
+        Just that in C#, you've to use a delegate, most times the Func and Action delegate
+
+
+        For example
+
+        public Func<int, int> square = n => n * n;
     */
 
     class LambdaExpression{
