@@ -2,10 +2,12 @@ using System;
 
 
 
-namespace CSharpJourney { 
+namespace CSharpJourney
+{
+
+
 
     class VideoEncoder{
-
 
         public delegate void VideoEncodedEventHandler(object sender, EventArgs args);
 
@@ -14,7 +16,7 @@ namespace CSharpJourney {
      
 
         public void Encode(){
-            Console.WriteLine("Encoding video");
+            Console.WriteLine("Encoding video");                     
 
             OnVideoEncoded();
         }

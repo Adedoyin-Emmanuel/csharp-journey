@@ -219,9 +219,15 @@ namespace CSharpJourney{
 
             var videoEncoder = new VideoEncoder();
 
+            var mailService = new MailService();
+            var textMessageService = new TextMessageService();
 
-       
-            videoEncoder.VideoEncoded += videoEncoder.VideoEncodedEventHandler;
+
+
+            videoEncoder.VideoEncoded += mailService.OnVideoEncoded;
+            videoEncoder.VideoEncoded += textMessageService.OnVideoEncoded;
+
+            videoEncoder.Encode();
 
 
 
