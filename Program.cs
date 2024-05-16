@@ -216,6 +216,16 @@ namespace CSharpJourney{
 
 
 
+
+            var videoEncoder = new VideoEncoder();
+
+
+       
+            videoEncoder.VideoEncoded += videoEncoder.VideoEncodedEventHandler;
+
+
+
+
             
 
 
