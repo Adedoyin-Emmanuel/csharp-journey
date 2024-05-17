@@ -31,3 +31,42 @@ C# is an amazing language created by Microsoft decades ago. I love C# because it
 5. I've been able to practise Lambda expressions, delegates and all. I event created my own custom **Func and Action** delegates. I'm also understanding generics bit by bit. I'm loving **C#** more and more. Right now, I'm about to practise events and understand how it works. Then I will move to Extensions and then to Enums which I already know, LINQ and then to Asyncronous operations in C#.
 
 6. I must say events in C# gave me tough time, this is because events as a whole comprises of Delegates and all, top that events are like complext delegates but I love it, hopefully I should understand it better very soon. Up next is extension methods, though I'm not a fan of this approach but I'm still going to learn and practice it.
+
+7. Yeah, I've learned method extension, At first it looked kinda confusing, I was kinda confused about where to add the this keyword. Basically, you just add the type you want to extend in the method you want. Though there are some requirements that must be met, the extension class and methods should be marked **static** they must have a **public** access modifier. Let's try to create an **Extension Method** eg
+
+```csharp
+
+using System;
+
+
+namespace CSharpJourney{
+
+    public static class StringExtension{
+
+        public static int GetWordsCount(this string str){
+            return str.Split(' ').Length;
+        }
+    }
+}
+
+```
+
+Now, you've created an extension method that gets the length of words in a string. Now let's use it in out main program..
+
+```csharp
+using System;
+
+
+namespace CSharpJourney{
+
+    public class Program{
+        static void Main(string[] args){
+            string[] sentence = "I love C# with all my strength";
+
+            Console.WriteLine(sentence.GetWordsCount());
+        }
+    }
+}
+```
+
+8. Bingo, we created our **Extension Method**. But according to my instructor **Mosh Hamedani**, you should only create **Extension Methods** when you really have to. Though as awesome as it looks, I'm not really a fan of it, but yeah it was worth learning. I will also expore creating other extension methods apart from string methods.

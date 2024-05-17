@@ -24,7 +24,7 @@ namespace CSharpJourney
         public static int GetWordCount(this string str){
              string[] totalWords = str.Split(' ');
 
-            return totalWords.Length;
+             return totalWords.Length;
         }
 
     }
