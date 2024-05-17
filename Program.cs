@@ -232,6 +232,14 @@ namespace CSharpJourney{
 
 
 
+            string confession1 = "I love C#";
+
+            Console.WriteLine(confession1.GetWordCount());
+            Console.WriteLine(confession1.GetWordCount().GetType());
+
+
+
+
             
 
 
