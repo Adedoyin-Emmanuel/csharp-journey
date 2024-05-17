@@ -70,3 +70,5 @@ namespace CSharpJourney{
 ```
 
 8. Bingo, we created our **Extension Method**. But according to my instructor **Mosh Hamedani**, you should only create **Extension Methods** when you really have to. Though as awesome as it looks, I'm not really a fan of it, but yeah it was worth learning. I will also expore creating other extension methods apart from string methods.
+
+9. I just thought of something cool, I think you should be able to use a **Lambda Expression** in an **Extension Method**, we can use the **Func Delegate or Action Delegate**. I will try it, this time it will be a Number Extension method.
