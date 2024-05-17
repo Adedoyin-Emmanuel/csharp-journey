@@ -5,7 +5,8 @@ namespace CSharpJourney{
 
     class Program{
 
-        static void Main(string[] args) {
+        static void Main(string[] args)
+        {
             // Console.WriteLine("Hello World!");
             // Program2.Hello();
             // Program2.PrintArray();
@@ -268,7 +269,8 @@ namespace CSharpJourney{
             }
 
 
-            foreach (Book book in cheapBooks) {
+            foreach (Book book in cheapBooks)
+            {
 
                 Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
             }
@@ -281,7 +283,8 @@ namespace CSharpJourney{
 
 
 
-            foreach (Book book in cheapBooks2) {
+            foreach (Book book in cheapBooks2)
+            {
 
                 Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
             }
@@ -290,21 +293,22 @@ namespace CSharpJourney{
             // Using LINQ query syntax to filter books with price less than 30
 
             var cheapBooks3 = from book in books
-                              where book.Price > 30 & book.Author == "Adedoyin Emmanuel" 
-                              & book.Title == "C# Intermediate" 
+                              where book.Price > 30 & book.Author == "Adedoyin Emmanuel"
+                              & book.Title == "C# Intermediate"
                               | book.Title == "C# Advanced"
                               select book;
 
 
 
-            foreach(Book book in cheapBooks3){
+            foreach (Book book in cheapBooks3)
+            {
 
                 Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
             }
 
 
 
-            var user1 = new User() { Name = "Adedoyin Emmanuel", Age = 18};
+            var user1 = new User() { Name = "Adedoyin Emmanuel", Age = 18 };
 
             user1.Introduce();
 
@@ -312,6 +316,56 @@ namespace CSharpJourney{
             User user2 = new User();
 
             user2.Introduce();
+
+
+
+
+            // Exceptions
+
+            try
+            {
+                int[] nums = [1, 2, 3, 4, 5];
+
+                Console.WriteLine(nums[10]);
+            }
+            catch (IndexOutOfRangeException exception)
+            {
+                Console.WriteLine("This exception will run because it is more specific");
+                Console.WriteLine(exception.GetType());
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception.GetType());
+                Console.WriteLine(exception.Message);
+            }
+
+
+
+            try
+            {
+                int x = 10;
+
+                Console.WriteLine(x / 0);
+            }
+            catch (DivideByZeroException exception)
+            {
+                Console.WriteLine("You cannot divide by Zero");
+                Console.WriteLine(exception.GetType());
+                Console.WriteLine(exception.Message);
+                
+            }
+
+
+
+            try{
+
+                throw new CustomException("Something went wrong", new Exception("This is the inner exception"));
+
+            }catch(CustomException ex){
+                Console.WriteLine(ex.GetType());
+                Console.WriteLine($"Caught an exception: {ex.Message}");
+                Console.WriteLine(ex?.InnerException?.Message);
+            }
 
 
         }
