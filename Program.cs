@@ -1,11 +1,32 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 
 namespace CSharpJourney{
 
     class Program{
 
-        static void Main(string[] args)
+
+         static async Task  FetchTodo(){
+            var todosService = new Todos();
+            var todos = await todosService.GetTodos();
+
+            if (todos != null)
+            {
+                foreach (var todo in todos)
+                {
+                    Console.WriteLine($"ID: {todo.id}, Title: {todo.title}, Completed: {todo.completed}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("No todos fetched.");
+            }
+
+
+        }
+
+         static async Task Main(string[] args)
         {
             // Console.WriteLine("Hello World!");
             // Program2.Hello();
@@ -233,141 +254,142 @@ namespace CSharpJourney{
 
 
 
-            string confession1 = "I love C#";
+            // string confession1 = "I love C#";
 
-            Console.WriteLine(confession1.GetWordCount());
-            Console.WriteLine(confession1.GetWordCount().GetType());
-
-
-
-
-
-            int[] numbers = { 1, 2, 3, 4, 5 };
-            Console.WriteLine(numbers.Add());
-
-
-            var num1 = 28;
-
-
-            Console.WriteLine(num1.Square());
+            // Console.WriteLine(confession1.GetWordCount());
+            // Console.WriteLine(confession1.GetWordCount().GetType());
 
 
 
 
 
-            var books = new Book().GetAllBooks();
-
-            List<Book> cheapBooks = new List<Book>();
-
-
-            foreach (Book book in books)
-            {
-                if (book.Price < 30)
-                {
-                    cheapBooks.Add(book);
-                }
-            }
+            // int[] numbers = { 1, 2, 3, 4, 5 };
+            // Console.WriteLine(numbers.Add());
 
 
-            foreach (Book book in cheapBooks)
-            {
-
-                Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
-            }
+            // var num1 = 28;
 
 
-            // Using LINQ to filter books with price less than 30
-
-
-            var cheapBooks2 = books.Where(book => book.Price < 30);
-
-
-
-            foreach (Book book in cheapBooks2)
-            {
-
-                Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
-            }
-
-
-            // Using LINQ query syntax to filter books with price less than 30
-
-            var cheapBooks3 = from book in books
-                              where book.Price > 30 & book.Author == "Adedoyin Emmanuel"
-                              & book.Title == "C# Intermediate"
-                              | book.Title == "C# Advanced"
-                              select book;
-
-
-
-            foreach (Book book in cheapBooks3)
-            {
-
-                Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
-            }
-
-
-
-            var user1 = new User() { Name = "Adedoyin Emmanuel", Age = 18 };
-
-            user1.Introduce();
-
-
-            User user2 = new User();
-
-            user2.Introduce();
+            // Console.WriteLine(num1.Square());
 
 
 
 
-            // Exceptions
 
-            try
-            {
-                int[] nums = [1, 2, 3, 4, 5];
+            // var books = new Book().GetAllBooks();
 
-                Console.WriteLine(nums[10]);
-            }
-            catch (IndexOutOfRangeException exception)
-            {
-                Console.WriteLine("This exception will run because it is more specific");
-                Console.WriteLine(exception.GetType());
-            }
-            catch (Exception exception)
-            {
-                Console.WriteLine(exception.GetType());
-                Console.WriteLine(exception.Message);
-            }
+            // List<Book> cheapBooks = new List<Book>();
 
 
+            // foreach (Book book in books)
+            // {
+            //     if (book.Price < 30)
+            //     {
+            //         cheapBooks.Add(book);
+            //     }
+            // }
 
-            try
-            {
-                int x = 10;
 
-                Console.WriteLine(x / 0);
-            }
-            catch (DivideByZeroException exception)
-            {
-                Console.WriteLine("You cannot divide by Zero");
-                Console.WriteLine(exception.GetType());
-                Console.WriteLine(exception.Message);
-                
-            }
+            // foreach (Book book in cheapBooks)
+            // {
+
+            //     Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
+            // }
+
+
+            // // Using LINQ to filter books with price less than 30
+
+
+            // var cheapBooks2 = books.Where(book => book.Price < 30);
 
 
 
-            try{
+            // foreach (Book book in cheapBooks2)
+            // {
 
-                throw new CustomException("Something went wrong", new Exception("This is the inner exception"));
-
-            }catch(CustomException ex){
-                Console.WriteLine(ex.GetType());
-                Console.WriteLine($"Caught an exception: {ex.Message}");
-                Console.WriteLine(ex?.InnerException?.Message);
-            }
+            //     Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
+            // }
 
 
+            // // Using LINQ query syntax to filter books with price less than 30
+
+            // var cheapBooks3 = from book in books
+            //                   where book.Price > 30 & book.Author == "Adedoyin Emmanuel"
+            //                   & book.Title == "C# Intermediate"
+            //                   | book.Title == "C# Advanced"
+            //                   select book;
+
+
+
+            // foreach (Book book in cheapBooks3)
+            // {
+
+            //     Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
+            // }
+
+
+
+            // var user1 = new User() { Name = "Adedoyin Emmanuel", Age = 18 };
+
+            // user1.Introduce();
+
+
+            // User user2 = new User();
+
+            // user2.Introduce();
+
+
+
+
+            // // Exceptions
+
+            // try
+            // {
+            //     int[] nums = [1, 2, 3, 4, 5];
+
+            //     Console.WriteLine(nums[10]);
+            // }
+            // catch (IndexOutOfRangeException exception)
+            // {
+            //     Console.WriteLine("This exception will run because it is more specific");
+            //     Console.WriteLine(exception.GetType());
+            // }
+            // catch (Exception exception)
+            // {
+            //     Console.WriteLine(exception.GetType());
+            //     Console.WriteLine(exception.Message);
+            // }
+
+
+
+            // try
+            // {
+            //     int x = 10;
+
+            //     Console.WriteLine(x / 0);
+            // }
+            // catch (DivideByZeroException exception)
+            // {
+            //     Console.WriteLine("You cannot divide by Zero");
+            //     Console.WriteLine(exception.GetType());
+            //     Console.WriteLine(exception.Message);
+
+            // }
+
+
+
+            // try{
+
+            //     throw new CustomException("Something went wrong", new Exception("This is the inner exception"));
+
+            // }catch(CustomException ex){
+            //     Console.WriteLine(ex.GetType());
+            //     Console.WriteLine($"Caught an exception: {ex.Message}");
+            //     Console.WriteLine(ex?.InnerException?.Message);
+            // }
+
+
+            await FetchTodo();
         }
     }
 }
