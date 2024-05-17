@@ -1,32 +1,25 @@
 using System;
 using System.Collections.Generic;
 
-interface IBook{
-    string Title { get; set; }
-    string Author { get; set; }
-
-    int Price { get; set; }
-}
 
 namespace CSharpJourney{
 
-    class Book: IBook
+    class Book
     {
 
-        public required  string Title { get; set; }
-        public required string Author { get; set; }
-        public required int Price { get; set; }
+        public  string Title { get; set; }
+        public string Author { get; set; }
+        public int Price { get; set; }
 
-        public List<Book> GetAllBooks(){
+        public IEnumerable<Book> GetAllBooks(){
 
             List<Book> books = new List<Book> {
                 new Book { Title = "C# Advanced", Author = "Mosh Hamedani", Price= 50 },
-                new Book { Title = "C# Fundamentals", Author = "Adedoyin", Price= 20 },
-                new Book { Title = "C# Beginner", Author = "Adedoyin", Price = 25 },
-                new Book { Title = "C# Intermediate", Author = "Adedoyin", Price = 100 },
-                new Book { Title = "C# Expert", Author = "Adedoyin", Price = 70 },
+                new Book { Title = "C# Fundamentals", Author = "Adedoyin Emmanuel", Price= 20 },
+                new Book { Title = "C# Beginner", Author = "Mosh Hamedani", Price = 25 },
+                new Book { Title = "C# Intermediate", Author = "Adedoyin Emmanuel", Price = 100 },
+                new Book { Title = "C# Expert", Author = "Traversy Media", Price = 70 },
              };
-
 
             return books;
         }

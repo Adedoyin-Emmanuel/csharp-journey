@@ -5,7 +5,7 @@ namespace CSharpJourney{
 
     class Program{
 
-        static void Main(string[] args){
+        static void Main(string[] args) {
             // Console.WriteLine("Hello World!");
             // Program2.Hello();
             // Program2.PrintArray();
@@ -23,7 +23,7 @@ namespace CSharpJourney{
             //Program2.CreateCSharpIntermediateDirectory();
 
 
-            var person = new CSharpClasses("Adedoyin Emmanuel", "coding, drumming, travelling") 
+            var person = new CSharpClasses("Adedoyin Emmanuel", "coding, drumming, travelling")
             { BirthDate = new DateTime(2005, 9, 14) };
 
             person.setGirlfriend(true);
@@ -184,7 +184,7 @@ namespace CSharpJourney{
             //     Console.WriteLine(list[i]);
             // }
 
-       
+
 
             var photoProcessor = new PhotoProcessor();
             var filters = new PhotoFilters();
@@ -241,23 +241,66 @@ namespace CSharpJourney{
 
 
 
-            int[] numbers = {1, 2, 3, 4, 5};
+            int[] numbers = { 1, 2, 3, 4, 5 };
             Console.WriteLine(numbers.Add());
 
 
             var num1 = 28;
 
 
-            Console.WriteLine(num1.Square());            
-            
+            Console.WriteLine(num1.Square());
 
 
 
 
 
+            var books = new Book().GetAllBooks();
+
+            List<Book> cheapBooks = new List<Book>();
+
+
+            foreach (Book book in books)
+            {
+                if (book.Price < 30)
+                {
+                    cheapBooks.Add(book);
+                }
+            }
+
+
+            foreach (Book book in cheapBooks) {
+
+                Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
+            }
+
+
+            // Using LINQ to filter books with price less than 30
+
+
+            var cheapBooks2 = books.Where(book => book.Price < 30);
 
 
 
+            foreach (Book book in cheapBooks2) {
+
+                Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
+            }
+
+
+            // Using LINQ query syntax to filter books with price less than 30
+
+            var cheapBooks3 = from book in books
+                              where book.Price > 30 & book.Author == "Adedoyin Emmanuel" 
+                              & book.Title == "C# Intermediate" 
+                              | book.Title == "C# Advanced"
+                              select book;
+
+
+
+            foreach(Book book in cheapBooks3){
+
+                Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
+            }
         }
     }
 }
