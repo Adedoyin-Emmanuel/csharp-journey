@@ -302,7 +302,16 @@ namespace CSharpJourney{
                 Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
             }
 
-            
+
+
+            var user1 = new User() { Name = "Adedoyin Emmanuel", Age = 18};
+
+            user1.Introduce();
+
+
+            User user2 = new User();
+
+            user2.Introduce();
         }
     }
 }
