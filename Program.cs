@@ -312,6 +312,8 @@ namespace CSharpJourney{
             User user2 = new User();
 
             user2.Introduce();
+
+
         }
     }
 }
