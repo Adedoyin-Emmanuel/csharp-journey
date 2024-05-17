@@ -29,4 +29,37 @@ namespace CSharpJourney
 
     }
 
+
+    /**
+        This extension method is going to be on Integers
+
+        I will try to create some math methods and then add them to the int type
+    */
+
+
+    static class IntExtension{
+
+        
+        public static int Add(this int[] numbers, params int[] additionalNumbers){
+
+            int sum = 0;
+
+            foreach(int number in numbers){
+                sum += number;
+            }
+
+
+            foreach(int number in additionalNumbers){
+                sum += number;
+            }
+
+            return sum;
+        }
+
+
+        public static int Square(this int number) => number * number;
+
+
+    }
+
 }

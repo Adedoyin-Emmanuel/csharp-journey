@@ -240,9 +240,15 @@ namespace CSharpJourney{
 
 
 
-            
+
+            int[] numbers = {1, 2, 3, 4, 5};
+            Console.WriteLine(numbers.Add());
 
 
+            var num1 = 28;
+
+
+            Console.WriteLine(num1.Square());            
             
 
 
