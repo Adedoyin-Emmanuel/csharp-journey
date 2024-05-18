@@ -28,21 +28,20 @@ namespace CSharpJourney{
 
          static async Task Main(string[] args)
         {
-            // Console.WriteLine("Hello World!");
-            // Program2.Hello();
-            // Program2.PrintArray();
-            // Program2.PrintString();
+            Console.WriteLine("Hello World!");
+            Program2.Hello();
+            Program2.PrintArray();
+            Program2.PrintString();
 
-            //Program2.WorkingWithArray();
+            Program2.WorkingWithArray();
 
-            //Program2.WorkingWithList();
-
-            //Program2.workingWithNumber();
+            Program2.WorkingWithList();
 
 
-            // Program2.WorkingWithDate();
 
-            //Program2.CreateCSharpIntermediateDirectory();
+            Program2.WorkingWithDate();
+
+            Program2.CreateCSharpIntermediateDirectory();
 
 
             var person = new CSharpClasses("Adedoyin Emmanuel", "coding, drumming, travelling")
@@ -50,7 +49,7 @@ namespace CSharpJourney{
 
             person.setGirlfriend(true);
 
-            //person.Introduce();
+            person.Introduce();
 
 
 
@@ -59,16 +58,16 @@ namespace CSharpJourney{
             int calculatorResult2 = Calculator.Add([1, 2, 3]);
 
 
-            //Console.WriteLine(calculatorResult);
-            //Console.WriteLine(calculatorResult2);
+            Console.WriteLine(calculatorResult);
+            Console.WriteLine(calculatorResult2);
 
 
             var person2 = new Person("Adedoyin Emmanuel", 18, "male", "coding, cooking, cycling, gaming");
 
 
-            // person2.Introduce();
+            person2.Introduce();
 
-            // person2.Walk();
+            person2.Walk();
 
 
 
@@ -76,12 +75,12 @@ namespace CSharpJourney{
             var employee = new Employee("Adedoyin Emmanuel Adeniyi", 18, "male", "coding, cooking, cycling, drumming, gaming, travelling");
 
 
-            // employee.Introduce();
+            employee.Introduce();
 
-            // employee.Walk();
+            employee.Walk();
 
 
-            // employee.Work("SquadCo"); // John CTO at SquadCo the C# guy. I love that guy ngl.
+            employee.Work("SquadCo"); // John CTO at SquadCo the C# guy. I love that guy ngl.
 
 
 
@@ -91,21 +90,21 @@ namespace CSharpJourney{
             Employee henqsoft = new Employee("Fasakin Henry", 17, "male", "coding, designing, cooking, cycling, listening to music, drumming");
 
 
-            // henqsoft.Introduce();
+            henqsoft.Introduce();
 
 
-            // henqsoft.Work("Facebook");
+            henqsoft.Work("Facebook");
 
-            // henqsoft.InRelationship = false;
-
-
-            // henqsoft.Work("Twitter");
+            henqsoft.InRelationship = false;
 
 
-            // henqsoft.InRelationship = true;
+            henqsoft.Work("Twitter");
 
 
-            // henqsoft.GetRelationshipStatus(); 
+            henqsoft.InRelationship = true;
+
+
+            henqsoft.GetRelationshipStatus(); 
 
 
 
@@ -118,30 +117,30 @@ namespace CSharpJourney{
             Employee emmysoft = new Employee("Adedoyin Emmanuel", 18, "male", "coding, cooking, cycling, listening to music, drumming, gaming, travelling");
 
 
-            // emmysoft.Introduce();
+            emmysoft.Introduce();
 
 
 
-            // emmysoft.Work("Google");
+            emmysoft.Work("Google");
 
-            // emmysoft.Work("Clipsave"); 
-
-
-
-            // emmysoft.Work("Apple");
-
-            // emmysoft.Work("Amazon");
-
-            // emmysoft.InRelationship = false;
-
-            // emmysoft.GetRelationshipStatus();
+            emmysoft.Work("Clipsave"); 
 
 
-            // emmysoft.Work("Microsoft");
 
-            // emmysoft.InRelationship = true;
+            emmysoft.Work("Apple");
 
-            // emmysoft.GetRelationshipStatus();
+            emmysoft.Work("Amazon");
+
+            emmysoft.InRelationship = false;
+
+            emmysoft.GetRelationshipStatus();
+
+
+            emmysoft.Work("Microsoft");
+
+            emmysoft.InRelationship = true;
+
+            emmysoft.GetRelationshipStatus();
 
 
 
@@ -149,7 +148,7 @@ namespace CSharpJourney{
             var circle = new Circle("circle", 20, 20);
 
 
-            //circle.Draw();
+            circle.Draw();
 
 
             var logger = new Logger();
@@ -160,10 +159,10 @@ namespace CSharpJourney{
             var installer = new Installer(logger);
 
 
-            //dbMigrator.MigrateDatabase();
+            dbMigrator.MigrateDatabase();
 
 
-            //installer.Install();
+            installer.Install();
 
             var emmanuel = new Animal("human", 18);
             var walkable = new Walkable();
@@ -182,16 +181,16 @@ namespace CSharpJourney{
 
             var fileManager = new FileManager();
 
-            //fileManager.CreateCsharpAdvancedDirectory("0-c#-advanced");
-            //fileManager.CreateCsharpAdvancedFile("Program.cs");
+            fileManager.CreateCsharpAdvancedDirectory("0-c#-advanced");
+            fileManager.CreateCsharpAdvancedFile("Program.cs");
 
 
 
             var emmy = new Person2("Emmanuel");
 
-            // Console.WriteLine(emmy.FullName);
+            Console.WriteLine(emmy.FullName);
 
-            // emmy.Walk();
+            emmy.Walk();
 
 
             var list = new CustomList<int>();
@@ -202,9 +201,9 @@ namespace CSharpJourney{
 
 
 
-            // for(int i = 0; i < list.Count; i ++){
-            //     Console.WriteLine(list[i]);
-            // }
+            for(int i = 0; i < list.Count; i ++){
+                Console.WriteLine(list[i]);
+            }
 
 
 
@@ -217,7 +216,7 @@ namespace CSharpJourney{
             filterHandler += filters.ApplyOpacity;
             filterHandler += customFilters.ApplyRedEye;
 
-            //photoProcessor.Process("photo.jpg", filterHandler);
+            photoProcessor.Process("photo.jpg", filterHandler);
 
 
 
@@ -254,139 +253,139 @@ namespace CSharpJourney{
 
 
 
-            // string confession1 = "I love C#";
+            string confession1 = "I love C#";
 
-            // Console.WriteLine(confession1.GetWordCount());
-            // Console.WriteLine(confession1.GetWordCount().GetType());
-
-
-
-
-
-            // int[] numbers = { 1, 2, 3, 4, 5 };
-            // Console.WriteLine(numbers.Add());
-
-
-            // var num1 = 28;
-
-
-            // Console.WriteLine(num1.Square());
+            Console.WriteLine(confession1.GetWordCount());
+            Console.WriteLine(confession1.GetWordCount().GetType());
 
 
 
 
 
-            // var books = new Book().GetAllBooks();
-
-            // List<Book> cheapBooks = new List<Book>();
-
-
-            // foreach (Book book in books)
-            // {
-            //     if (book.Price < 30)
-            //     {
-            //         cheapBooks.Add(book);
-            //     }
-            // }
+            int[] numbers = { 1, 2, 3, 4, 5 };
+            Console.WriteLine(numbers.Add());
 
 
-            // foreach (Book book in cheapBooks)
-            // {
-
-            //     Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
-            // }
+            var num1 = 28;
 
 
-            // // Using LINQ to filter books with price less than 30
-
-
-            // var cheapBooks2 = books.Where(book => book.Price < 30);
-
-
-
-            // foreach (Book book in cheapBooks2)
-            // {
-
-            //     Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
-            // }
-
-
-            // // Using LINQ query syntax to filter books with price less than 30
-
-            // var cheapBooks3 = from book in books
-            //                   where book.Price > 30 & book.Author == "Adedoyin Emmanuel"
-            //                   & book.Title == "C# Intermediate"
-            //                   | book.Title == "C# Advanced"
-            //                   select book;
-
-
-
-            // foreach (Book book in cheapBooks3)
-            // {
-
-            //     Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
-            // }
-
-
-
-            // var user1 = new User() { Name = "Adedoyin Emmanuel", Age = 18 };
-
-            // user1.Introduce();
-
-
-            // User user2 = new User();
-
-            // user2.Introduce();
+            Console.WriteLine(num1.Square());
 
 
 
 
-            // // Exceptions
 
-            // try
-            // {
-            //     int[] nums = [1, 2, 3, 4, 5];
+            var books = new Book().GetAllBooks();
 
-            //     Console.WriteLine(nums[10]);
-            // }
-            // catch (IndexOutOfRangeException exception)
-            // {
-            //     Console.WriteLine("This exception will run because it is more specific");
-            //     Console.WriteLine(exception.GetType());
-            // }
-            // catch (Exception exception)
-            // {
-            //     Console.WriteLine(exception.GetType());
-            //     Console.WriteLine(exception.Message);
-            // }
+            List<Book> cheapBooks = new List<Book>();
 
 
+            foreach (Book book in books)
+            {
+                if (book.Price < 30)
+                {
+                    cheapBooks.Add(book);
+                }
+            }
 
-            // try
-            // {
-            //     int x = 10;
 
-            //     Console.WriteLine(x / 0);
-            // }
-            // catch (DivideByZeroException exception)
-            // {
-            //     Console.WriteLine("You cannot divide by Zero");
-            //     Console.WriteLine(exception.GetType());
-            //     Console.WriteLine(exception.Message);
+            foreach (Book book in cheapBooks)
+            {
 
-            // }
+                Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
+            }
+
+
+            // Using LINQ to filter books with price less than 30
+
+
+            var cheapBooks2 = books.Where(book => book.Price < 30);
 
 
 
-            // try{
+            foreach (Book book in cheapBooks2)
+            {
 
-            //     throw new CustomException("Something went wrong", new Exception("This is the inner exception"));
+                Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
+            }
 
-            // }catch(CustomException ex){
-            //     Console.WriteLine(ex.GetType());
-            //     Console.WriteLine($"Caught an exception: {ex.Message}");
-            //     Console.WriteLine(ex?.InnerException?.Message);
-            // }
+
+            // Using LINQ query syntax to filter books with price less than 30
+
+            var cheapBooks3 = from book in books
+                              where book.Price > 30 & book.Author == "Adedoyin Emmanuel"
+                              & book.Title == "C# Intermediate"
+                              | book.Title == "C# Advanced"
+                              select book;
+
+
+
+            foreach (Book book in cheapBooks3)
+            {
+
+                Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, Price: {book.Price}");
+            }
+
+
+
+            var user1 = new User() { Name = "Adedoyin Emmanuel", Age = 18 };
+
+            user1.Introduce();
+
+
+            User user2 = new User();
+
+            user2.Introduce();
+
+
+
+
+            // Exceptions
+
+            try
+            {
+                int[] nums = [1, 2, 3, 4, 5];
+
+                Console.WriteLine(nums[10]);
+            }
+            catch (IndexOutOfRangeException exception)
+            {
+                Console.WriteLine("This exception will run because it is more specific");
+                Console.WriteLine(exception.GetType());
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception.GetType());
+                Console.WriteLine(exception.Message);
+            }
+
+
+
+            try
+            {
+                int x = 10;
+
+                Console.WriteLine(x / 0);
+            }
+            catch (DivideByZeroException exception)
+            {
+                Console.WriteLine("You cannot divide by Zero");
+                Console.WriteLine(exception.GetType());
+                Console.WriteLine(exception.Message);
+
+            }
+
+
+
+            try{
+
+                throw new CustomException("Something went wrong", new Exception("This is the inner exception"));
+
+            }catch(CustomException ex){
+                Console.WriteLine(ex.GetType());
+                Console.WriteLine($"Caught an exception: {ex.Message}");
+                Console.WriteLine(ex?.InnerException?.Message);
+            }
 
 
             await FetchTodo();

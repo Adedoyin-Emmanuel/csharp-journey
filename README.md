@@ -16,6 +16,11 @@ Okay, so for the resources, I'm learning from **Mosh Hamedani**, you can find th
 
 I will also add any other resources here.
 
+
+## Inspirations 🤩
+
+Although I've always loved **C#** since I was in Secondary School. I was learning how to play piano and I really love the **C#** key. I also love the **C#** programming language. I've always wanted to learn it but I never had the chance to learn it. I've always been a **JavaScript** and **TypeScript** developer. I've always wanted to learn **C#** and build fullstack applications with it. I'm inspired by **Mosh Hamedani** and **Scott Hanselman**. I love their work and I want to be like them. I want to be a world class **C#** developer. I want to build amazing applications with **C#** and **Blazor**. I want to build amazing **API's** with **ASP.NET**
+
 ## What I've learned 🧠
 
 C# is an amazing language created by Microsoft decades ago. I love C# because it is a High level language.Top that it is a typed language.
