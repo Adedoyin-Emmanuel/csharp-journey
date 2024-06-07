@@ -4,6 +4,13 @@
 
 Hello there, I created this repo to document my journey on learning C# from zero to hero. Of course I learned **C#** from the best so why wouldn't I be a world class **C#** Developer. I started learning C# **January 2024** and my goal is to master the language and start building solid projects by **August 2024**
 
+## Projects
+
+Below are the projects that I've build with **Csharp and Dotnet**. I will still be building more projects as I learn more about the framework.
+
+1. Taskify (Task management application) - [Taskify Repo](https://github.com/adedoyin-emmanuel/taskify)
+2. Buka (Recipe sharing platform) - [Buka Repo](https://github.com/adedoyin-emmanuel/buka)
+
 ## Resources 👜
 
 Okay, so for the resources, I'm learning from **Mosh Hamedani**, you can find the video on Youtube. But since the course is kinda old too and somethings have changed in the **C#** community, I'm also using the official **Microsoft Documentation** and their videos to learn too. I've picked somethings **Mosh** didn't mention there. I'm also using **W3Schools** to learn too, I've finished their tutorial and I also took their test and got 22/25.
@@ -15,7 +22,6 @@ Okay, so for the resources, I'm learning from **Mosh Hamedani**, you can find th
 5. Learn C# Basics from W3schools [Learn C# Tutorials](https://www.w3schools.com/cs/index.php)
 
 I will also add any other resources here.
-
 
 ## Inspirations 🤩
 
